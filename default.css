@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#heading {
+    background-color: #0da234;
+    padding-top: 0.5em;
+    color: #cec518;
+    vertical-align: bottom;
+}
+
+#main {
+    text-align: left;
+    width: 400px;
+    padding-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-family: Arial;
+    
+}
+
+#loginView {
+    font-size: 14pt;
+}
+
+#tileView {
+    overflow: hidden;
+    vertical-align: middle;
+    width: 150px;
+}
+
+#tileListArea {
+    height: 120px;
+    width: 60px;
+    border-style: solid;
+    border-width: 1px;
+    overflow-y: scroll;
+    text-align: center;
+    float: right;
+}
+
+#nickNameView {
+    clear: right;
+}
+
+dl {
+    margin: 3px 0px 3px 0px; 
+}
+
+dt {
+    padding-top: 2px;
+}
+
+.tileSelected {
+    background-color: #0094ff;
+}
+
+#loginBtn {
+    font-family: Arial;
+    font-size: 11pt;
+}
+
+.warning {
+   color: #f00;
+   display: inline;
+}
+
+#chatView, #memberListView {
+	width: 550px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#msgwindow {
+	width: 546px;
+	height: 400px;
+	overflow: scroll;
+	border-bottom-width: 0px;
+}
+
+#settingBar {
+	height: 33px;
+	background-color: #e2dcdc;
+}
+
+.barBtn {
+    height: 27px;
+    width: 30px;
+    margin-top: 3px;
+    margin-right: 0px;
+    vertical-align: top;
+}
+
+#emotionBtn, #colorBtn {
+    padding-top: 5px;
+}
+
+#emotionBtn {
+    margin-left: 10px;
+}
+
+.emotion {
+    height: 40px;
+    width: 40px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    margin-left: -3px;
+    margin-right: -3px;
+    padding: 0px;
+    vertical-align: top;
+}
+
+#emotionArea, #colorArea {
+    background-color: #f4f0f0;
+    position: absolute;
+}
+
+#emotionArea {
+    width: 165px;
+    height: 165px;
+}
+
+#colorArea {
+    width: 124px;
+    height: 27px;
+    padding-left: 5px;
+}
+
+#colorArea input{
+    width: 60px;
+}
+
+#emotionArea div {
+    margin-left: 8px;
+}
+
+#firstLine {
+    margin-top: 8px;
+}
+
+#inputArea {
+	height: 80px;
+}
+
+#editwindow {
+	width: 470px;
+	height: 74px;
+	resize: none;
+	padding-right: 0px;
+}
+
+#sendBtn {
+	width: 72px;
+	height: 79px;
+	float: right;
+}
+
+#memberListView {
+	width: 120px;
+	height: 410px;
+	position: absolute;
+	left: 580px;
+	top: 1em;
+	overflow-y: scroll;
+}
+
+#keytips {
+    font-size: 3pt;
+    color: #686968;
+}

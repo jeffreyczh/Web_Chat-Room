@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chat Room</title>
+        <link rel="stylesheet" type="text/css" href="default.css"></link>
+        <script src="chatJS.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js"
+                type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"
+				type="text/javascript"></script>
+        <script type="text/javascript" src="jscolor/jscolor.js"></script>
+    </head>
+    <body>
+        <div id="heading">
+         <h1>Welcome to My Chat Room</h1>
+        </div>
+        <div id="main">
+            <!--all this in the main view is initially a login view
+            it will be replaced by a chat rom view-->
+            <div id="loginView">
+                <div id="nickNameView">
+                Nick Name: <input id="namebox" type="text" size="12">
+                <div id="inuseWarning" class="warning" hidden></div>
+                </div>
+                <br>
+                <div id="tileView">
+                Tile: 
+                    <div id="tileListArea">
+                        <dl id="tileList">
+                            <dt><img src="icon/tile/default.jpg" alt="default"></dt>
+                            <dt><img src="icon/tile/aunty.jpg" alt="aunty"></dt>
+                            <dt><img src="icon/tile/blueboy.jpg" alt="blueboy"></dt>
+                            <dt><img src="icon/tile/browngirl.jpg" alt="browngirl"></dt>
+                            <dt><img src="icon/tile/glassboy.jpg" alt="glassboy"></dt>
+                            <dt><img src="icon/tile/goldengirl.jpg" alt="goldengirl"></dt>
+                            <dt><img src="icon/tile/glassman.jpg" alt="glassman"></dt>
+                            <dt><img src="icon/tile/hatgirl.jpg" alt="hatgirl"></dt>
+                            <dt><img src="icon/tile/man.jpg" alt="man"></dt>
+                            <dt><img src="icon/tile/longgirl.jpg" alt="longgirl"></dt>
+                        </dl>
+                     </div>
+                </div>
+                <br>
+                <button id="loginBtn" type="button">Enter Chat Room</button>
+                <img id="enteringImg" src="icon/loginloading.gif" alt="entering..." hidden/>
+            </div>
+            <div id="chatView" hidden>
+                <iframe id="msgwindow">
+			    </iframe>
+			    <div id="settingBar">
+                    <button id="emotionBtn" class="barBtn" type="button"><img src="icon/emotions/emoticon_icon.png" alt="emotions"></button>
+                    <div id="emotionArea" hidden>
+                        <div id="firstLine">
+                            <button class="emotion" type="button"><img src="icon/emotions/1.gif" alt="1.gif"></button>
+                            <button class="emotion" type="button"><img src="icon/emotions/10.gif" alt="10.gif"></button>
+                            <button class="emotion" type="button"><img src="icon/emotions/11.gif" alt="11.gif"></button>
+                            <button class="emotion" type="button"><img src="icon/emotions/115.gif" alt="115.gif"></button>
+                        </div>
+                        <div>
+                            <button class="emotion" type="button"><img src="icon/emotions/118.gif" alt="118.gif"></button>
+                            <button class="emotion" type="button"><img src="icon/emotions/119.gif" alt="119.gif"></button>
+                            <button class="emotion" type="button"><img src="icon/emotions/12.gif" alt="12.gif"></button>
+                            <button class="emotion" type="button"><img src="icon/emotions/122.gif" alt="122.gif"></button>
+                        </div>
+                        <div>
+                            <button class="emotion" type="button"><img src="icon/emotions/127.gif" alt="127.gif"></button>
+                            <button class="emotion" type="button"><img src="icon/emotions/139.gif" alt="139.gif"></button>
+                            <button class="emotion" type="button"><img src="icon/emotions/152.gif" alt="152.gif"></button>
+                            <button class="emotion" type="button"><img src="icon/emotions/163.gif" alt="163.gif"></button>
+                        </div>
+                        <div>
+                            <button class="emotion" type="button"><img src="icon/emotions/175.gif" alt="175.gif"></button>
+                            <button class="emotion" type="button"><img src="icon/emotions/284.gif" alt="284.gif"></button>
+                            <button class="emotion" type="button"><img src="icon/emotions/321.gif" alt="321.gif"></button>
+                            <button class="emotion" type="button"><img src="icon/emotions/386.gif" alt="386.gif"></button>
+                        </div>
+                    </div>
+                    <button id="boldBtn" class="barBtn" type="button"><b>B</b></button>
+                    <button id="italicBtn" class="barBtn" type="button"><i><b>I</b></i></button>
+                    <button id="underlineBtn" class="barBtn" type="button"><u><b>U</b></u></button>
+                    <button id="colorBtn" class="barBtn" type="button"><img src="icon/color.png" alt="color"></button>
+                    <div id="colorArea" hidden>
+                        Click: <input class="color">
+                    </div>
+			    </div>
+			    <div id="inputArea">
+				    <iframe id="editwindow"></iframe>
+				    <button id="sendBtn" type="button">Send</button>
+			   </div>
+			</div>
+            <div id = "keytips" hidden>Press Ctrl + Enter to send</div>
+		    <div id="memberListView" hidden>
+                <dl id="userList"></dl>
+		    </div>
+        </div>
+    </body>
+</html>
